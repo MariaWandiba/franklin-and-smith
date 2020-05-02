@@ -92,13 +92,9 @@ ul {
 
 /****** Header ******/
 
-header {
-  clear: both;
-}
-
 header .full-width {
   background-color: white;
-  height: 840px;
+  height: auto;
   text-align: center;
   overflow: auto;
 }
@@ -127,11 +123,39 @@ nav {
   color: #000000;
 }
 
+/* unvisited link */
+a:link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(197, 95, 27);
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: rgb(197, 95, 27);
+  text-decoration: underline;
+}
+
 header nav ul li {
   display: inline-block;
   padding-inline-start: 22px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+header .top-nav ul {
+  padding-top: 0;
 }
 
 /****** About ******/

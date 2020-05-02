@@ -66,7 +66,6 @@ nav {
   font-weight: normal;
   font-size: 12px;
   line-height: 35px;
-  /* or 292% */
 
   align-items: center;
   text-align: center;
@@ -78,17 +77,20 @@ nav {
 /***** GRID *****/
 
 .full-width {
-  width: 1280px;
+  width: 1420px;
+  height: auto;
   margin: 0 auto;
 }
 
 .half-width {
   width: 600px;
+  height: auto;
   float: left;
 }
 
 .third-width {
   width: 400px;
+  height: auto;
   float: left;
 }
 
@@ -112,28 +114,32 @@ ul {
 
 header .full-width {
   background-color: white;
-  height: 800px;
+  height: 840px;
   text-align: center;
   overflow: auto;
+}
+
+.full-width h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header img {
   width: 1101px;
   height: auto;
-  left: 90px;
-  right: 90px;
-  top: 90px;
 }
 
 header nav ul li {
-  display: inline;
+  display: inline-block;
   padding-inline: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /****** About section ******/
 
 #about .full-width {
-  height: 450px;
+  height: 440px;
   align-items: center;
 }
 
@@ -146,9 +152,16 @@ header nav ul li {
   padding-right: 368.54px;
 }
 
-#about .full-width button {
-  margin-left: 550px;
+.full-width button {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 15px;
+  margin-left: 630px;
   margin-top: 30px;
+  padding: 10px 10px;
+  background-color: #000000;
+  border: none;
+  color: white;
 }
 
 /****** Featured products section ******/
@@ -160,6 +173,8 @@ header nav ul li {
 }
 
 #featured-products .full-width h3 {
+  font-size: 14px;
+  font-weight: 600;
   padding-top: 30px;
   padding-left: 90px;
 }
@@ -168,19 +183,6 @@ header nav ul li {
   width: 357px;
   height: 21px;
   left: 90px;
-
-  font-family: "M PLUS 1p", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 35px;
-  /* or 194% */
-
-  align-items: center;
-  letter-spacing: 0.185em;
-  text-transform: uppercase;
-
-  color: #000000;
 }
 
 .third-width-one,
@@ -197,10 +199,9 @@ p span {
 .third-width-one {
   width: 264px;
   height: 400px;
-  left: 136px;
   top: 1407px;
   float: left;
-  padding: 20px 54px 110px 136px;
+  padding: 20px 54px 110px 180px;
 }
 
 .third-width-one p {
@@ -212,7 +213,7 @@ p span {
   width: 264px;
   height: 400px;
   left: 508px;
-  padding: 20px 54px 110px 54px;
+  padding: 20px 54px 110px 87px;
   float: left;
 }
 .third-width-two p {
@@ -224,7 +225,7 @@ p span {
   width: 264px;
   height: 400px;
   left: 880px;
-  padding: 20px 54px 110px 54px;
+  padding: 20px 54px 110px 87px;
   float: left;
 }
 .third-width-three p {
@@ -234,20 +235,20 @@ p span {
 
 /****** Contact section ******/
 
-#contact .full-width {
+#footer .full-width {
   background-color: #f6f3ed;
   display: inline;
 }
 
-#contact ul {
+#footer ul {
   list-style: none;
 }
 
-#contact ul li {
+#footer ul li {
   display: inline-block;
 }
 
-#contact img {
+#footer img {
   display: inline-block;
 }
 
@@ -257,14 +258,23 @@ p span {
   padding-left: 500px;
 }
 
+#social-media {
+  padding: 0 10px;
+}
+
 #social-media ul {
+  list-style: none;
   display: inline-block;
   padding-left: 571px;
 }
 
-#social-medial img {
+#social-medial ul li {
+  display: inline-block;
+}
+
+#social-medial ul img {
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 70px;
 }
 
 #footer-navigation {
